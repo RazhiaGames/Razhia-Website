@@ -9,7 +9,7 @@ html {
   color: #fff;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar { 
 	width: 14px;
 	height: 18px;
 	background: var(--scrollbar-background);
