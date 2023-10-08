@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Erfan Sheikh Portfolio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+        rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <body onload="javascript:ShowFavorite()"></body>
+    <!-- Navigation-->
+    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#page-top">Menu</a></li>
+            <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+            <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="sidebar-nav-item"><a href="#services">What I Do</a></li>
+            <li class="sidebar-nav-item"><a href="#about">About</a></li>
+            <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Header-->
+    <header class="masthead d-flex align-items-center">
+        <div class="container px-4 px-lg-5 text-center">
+            <h1 class="mb-1">Erfan Sheikh Portfolio</h1>
+            <h3 class="mb-5"><em>A Summery of What i Have Done So Far And What Are My Interests</em></h3>
+            <a class="btn btn-primary btn-xl" href="#portfolio">Recent Projects</a>
+            <a class="btn btn-dark btn-x2" href="assets/ErfanSheikh.pdf">Download CV</a>
+        </div>
+    </header>
+    <!-- Services-->
+    <section class="content-section bg-tertiary text-white text-center" id="services">
+        <div class="container px-4 px-lg-5">
+            <div class="content-section-heading">
+                <!-- <h3 class="text-secondary mb-0">Services</h3> -->
+                <a href="javascript:void(0);" onclick="ShowAll()">
+                    <h2 class="mb-5">What I Do</h2>
+                </a>
+            </div>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <a href="javascript:void(0);" onclick="ShowModeling()"> <!-- Call your function here -->
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i></i><img class="img-fluid"
+                                src="assets/img/3d-Modeling.png" /></span>
+                    </a>
+                    <h4><strong>3D Modeling & Rendering</strong></h4>
+                    <p class="text-faded mb-0">Blender, Maya and Cinema4d</p>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <a href="javascript:void(0);" onclick="ShowTexturing()"> <!-- Call your function here -->
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i></i><img class="img-fluid"
+                                src="assets/img/Texturing.png" /></span>
+                    </a>
+                    <h4><strong>Texturing & UV Mapping</strong></h4>
+                    <p class="text-faded mb-0">Substance Painter</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <a href="javascript:void(0);" onclick="ShowCoding()">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i></i><img class="img-fluid"
+                                src="assets/img/code.png" /></span>
+                    </a>
+                    <h4><strong>Coding</strong></h4>
+                    <p class="text-faded mb-0">
+                        Unity C# and Python
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="javascript:void(0);" onclick="ShowShaders()">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i></i><img class="img-fluid"
+                                src="assets/img/Shader.png" /></span>
+                    </a>
+                    <h4><strong>Shader Magic</strong></h4>
+                    <p class="text-faded mb-0">Unity and a little bit of Unreal</p>
+                </div>
+                <span class="black-circle"></span>
+                <span class="black-circle"></span>
+                <span class="black-circle"></span>
+                <span class="black-circle"></span>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio-->
+    <section class="portfolio-section bg-dark" id="portfolio">
+        <div class="container px-4 px-lg-5">
+            <!-- <div class="portfolio-section-heading text-center"> -->
+            <!-- <h3 class="text-secondary mb-0">Portfolio</h3> -->
+            <!-- <h2 class="mb-1">Recent Projects</h2> -->
+            <!-- </div> -->
+            <div class="row gx-0">
+                <div id="Shader02" class="col-lg-6">
+                    <a class="portfolio-item" href="https://www.artstation.com/artwork/BX2bL4" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Shader Experiment</div>
+                                <p class="mb-0">Monument Valley like shader.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio-5.jpg" alt="..." />
+                    </a>
+                </div>
+                <div id="EnvArt" class="col-lg-6">
+                    <a class="portfolio-item" href="https://www.artstation.com/artwork/6N5Xlx" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Environment Art</div>
+                                <p class="mb-0">Unity Environment Test i did with HDRP.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/bg-masthead.jpg" alt="..." />
+                    </a>
+                </div>
+                <div id="Shader01" class="col-lg-6">
+                    <a class="portfolio-item" href="https://www.artstation.com/artwork/Rya2RO" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Grass Shader</div>
+                                <p class="mb-0">Some experiment i did with unity HDRP.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+                    </a>
+                </div>
+                <div id="Machinarium" class="col-lg-6">
+                    <a class="portfolio-item" href="https://www.artstation.com/artwork/P06D1" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Machinarium FanArt</div>
+                                <p class="mb-0">Used Cinema4d, Redshift and Substance Painter to bring these lovely
+                                    Character into 3d world.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
+                    </a>
+                </div>
+                <div id="Aurora1" class="col-lg-6">
+                    <a class="portfolio-item" href="https://youtu.be/iAP0hbyaSK0" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Aurora Menu</div>
+                                <p class="mb-0">Aurora was a Unity project for which I was the artist that used the URP.
+                                </p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+                    </a>
+                </div>
+                <div id="Aurora2" class="col-lg-6">
+                    <a class="portfolio-item" href="https://youtu.be/UeOFgDJrB90" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Aurora In Game</div>
+                                <p class="mb-0">Aurora was a Unity project for which I was the artist that used the URP.
+                                </p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
+                    </a>
+                </div>
+                <div id="4Wheelers" class="col-lg-6">
+                    <a class="portfolio-item" href="https://www.imgawards.com/game-of-the-week/4wheelers-imga-mena-best-multiplayer-game-with-a-damn-good-design-too/" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">4Wheelers Game</div>
+                                <p class="mb-0">The Award Winning Game I worked on.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/4Wheelers.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="CouplesYoga" class="col-lg-6">
+                    <a class="portfolio-item" href="https://play.google.com/store/apps/details?id=com.tippytap.yoga&hl=en&gl=US" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Couples Yoga Game</div>
+                                <p class="mb-0">A hit game i helped in creation.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/CouplesYoga.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="Starla" class="col-lg-6">
+                    <a class="portfolio-item" href="https://play.google.com/store/apps/details?id=games.FunTherapy.StarlaTheFinalFrontier" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Starla Game</div>
+                                <p class="mb-0">Space Shooter Game.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/Starla.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="BeautySalon" class="col-lg-6">
+                    <a class="portfolio-item" href="https://youtube.com/shorts/yLbhTmEwLs8?feature=share" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Beauty Salon Game</div>
+                                <p class="mb-0">A HyperCasual Game.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/BeatySalon V3.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="DrCare" class="col-lg-6">
+                    <a class="portfolio-item" href="https://youtube.com/shorts/slAyZdgGu9M?feature=share" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Dr Care Game</div>
+                                <p class="mb-0">A HyperCasual Game.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/Dr-Care.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="IceSlide" class="col-lg-6">
+                    <a class="portfolio-item" href="https://apps.apple.com/us/app/ice-sling/id1549363450" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Ice Slide Game</div>
+                                <p class="mb-0">A HyperCasual Game.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/IceSlide.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="Ipear" class="col-lg-6">
+                    <a class="portfolio-item" href="https://youtube.com/shorts/AHJmubpwkDk?feature=share" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Make Your Mac Game</div>
+                                <p class="mb-0">A HyperCasual Game.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/Ipear.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="PowerWasher" class="col-lg-6">
+                    <a class="portfolio-item" href="https://youtube.com/shorts/zuLA9_1Xcsc?feature=share" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Power Washer Game</div>
+                                <p class="mb-0">A HyperCasual Game.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/PowerWasher.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="Pottery" class="col-lg-6">
+                    <a class="portfolio-item" href="https://youtube.com/shorts/zlLZ_2mQtuY?feature=share" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Pottery Game</div>
+                                <p class="mb-0">A HyperCasual Game.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/Pottery.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="Jewelry" class="col-lg-6">
+                    <a class="portfolio-item" href="https://youtube.com/shorts/P7f7cbz-eLo?feature=share" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Jewelry Game</div>
+                                <p class="mb-0">A HyperCasual Game.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/Jewelry.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="RPSRun" class="col-lg-6">
+                    <a class="portfolio-item" href="https://youtube.com/shorts/_qQFjCIhamA?feature=share" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Rock Paper Scissors Game</div>
+                                <p class="mb-0">A HyperCasual Game.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/RPS-Run.webp" alt="..." />
+                    </a>
+                </div>
+                <div id="CandyMaster" class="col-lg-6">
+                    <a class="portfolio-item" href="https://youtube.com/shorts/tgStZYfEhZE?feature=share" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">Candy Master Game</div>
+                                <p class="mb-0">A HyperCasual Game.</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/CandyMaster.webp" alt="..." />
+                    </a>
+                </div>
+                <p style="margin-bottom:.5cm;"></p>
+                <a id="ShowMoreButton" class="btn btn-primary btn-xl" href="javascript:void(0);" onclick="ShowAllAndRemoveButton()">Load More</a>
+            </div>       
+        </div>
+    </section>
+    <!-- Add this button before the "Contact me" button -->
+
+    <!-- About-->
+    <!-- <section class="content-section bg-dark" id="about"> -->
+    <!-- <div class="container px-4 px-lg-5 text-center"> -->
+    <!-- <div class="row gx-4 gx-lg-5 justify-content-center"> -->
+    <!-- <div class="col-lg-10"> -->
+    <!-- <p class="mb-1">I like creating Environments, do shader experiments, learn new softwares and create tools</p> -->
+    <!-- <h2>I like creating Environments, do shader experiments, learn new softwares and create tools</h2> -->
+    <!-- </div> -->
+    <!-- <p class="text-faded mb-0">Runner, Nature Enthusiastic, Creator at heart</p> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </section> -->
+    <!-- Call to Action-->
+    <section class="content-section bg-tertiary text-white" id="contact">
+        <div class="container px-4 px-lg-5 text-center">
+            <h2 class="mb-4">Contact me!</h2>
+            <a class="btn btn-xl btn-light me-4" href="mailto: erfan.sheikhhoseini@gmail.com">Email Me!</a>
+            <a class="btn btn-xl btn-dark" href="https://www.linkedin.com/in/erfansheikh/">My Linkedin!</a>
+        </div>
+    </section>
+    <!-- Map-->
+    <!-- <div class="map" id="contact">
+            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+            <br />
+            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
+        </div> -->
+    <!-- Footer-->
+
+    <section class="bg-dark" id="etc">
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/_erfan_sh"><i
+                                class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://github.com/Erfan-Sheikh"><i
+                                class="icon-social-github"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white"
+                            href="https://www.linkedin.com/in/erfansheikh/"><i class="icon-social-linkedin"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white"
+                            href="https://www.artstation.com/nepstersh"><img class="img-fluid"
+                                src="assets/img/ArtStation.png" /></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; Erfan Sheikh 2023</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    
+    </section>
+
+
+    <!-- Java Script-->
+    <script>
+        function hideAllPortfolioItems() {
+            document.getElementById("Aurora1").style.display = 'none';
+            document.getElementById("Aurora2").style.display = 'none';
+            document.getElementById("Machinarium").style.display = 'none';
+            document.getElementById("Shader01").style.display = 'none';
+            document.getElementById("Shader02").style.display = 'none';
+            document.getElementById("EnvArt").style.display = 'none';
+
+
+            document.getElementById("4Wheelers").style.display = 'none';
+            document.getElementById("CandyMaster").style.display = 'none';
+            document.getElementById("Starla").style.display = 'none';
+            document.getElementById("CouplesYoga").style.display = 'none';
+            document.getElementById("BeautySalon").style.display = 'none';
+            document.getElementById("DrCare").style.display = 'none';
+            document.getElementById("IceSlide").style.display = 'none';
+            document.getElementById("Ipear").style.display = 'none';
+            document.getElementById("PowerWasher").style.display = 'none';
+            document.getElementById("Pottery").style.display = 'none';
+            document.getElementById("Jewelry").style.display = 'none';
+            document.getElementById("RPSRun").style.display = 'none';
+        }
+
+        function ShowAll() {
+            document.getElementById("Aurora1").style.display = 'block';
+            document.getElementById("Aurora2").style.display = 'block';
+            document.getElementById("Machinarium").style.display = 'block';
+            document.getElementById("Shader01").style.display = 'block';
+            document.getElementById("Shader02").style.display = 'block';
+            document.getElementById("EnvArt").style.display = 'block';
+
+
+            document.getElementById("4Wheelers").style.display = 'block';
+            document.getElementById("CandyMaster").style.display = 'block';
+            document.getElementById("Starla").style.display = 'block';
+            document.getElementById("CouplesYoga").style.display = 'block';
+            document.getElementById("BeautySalon").style.display = 'block';
+            document.getElementById("DrCare").style.display = 'block';
+            document.getElementById("IceSlide").style.display = 'block';
+            document.getElementById("Ipear").style.display = 'block';
+            document.getElementById("PowerWasher").style.display = 'block';
+            document.getElementById("Pottery").style.display = 'block';
+            document.getElementById("Jewelry").style.display = 'block';
+            document.getElementById("RPSRun").style.display = 'block';
+        }
+
+        function ShowAllAndRemoveButton() {
+            ShowAll();
+            RemoveLoadMoreButton();
+        }
+
+        function RemoveLoadMoreButton() {
+            document.getElementById("ShowMoreButton").style.display = 'none';
+        }
+        function ShowModeling() {
+            hideAllPortfolioItems(); // hide
+            document.getElementById("EnvArt").style.display = 'block';
+            RemoveLoadMoreButton();
+        }
+        function ShowTexturing() {
+            hideAllPortfolioItems(); // hide
+            document.getElementById("EnvArt").style.display = 'block';
+            RemoveLoadMoreButton();
+        }
+        function ShowCoding() {
+            hideAllPortfolioItems(); // hide
+                        document.getElementById("4Wheelers").style.display = 'block';
+            document.getElementById("CandyMaster").style.display = 'block';
+            document.getElementById("Starla").style.display = 'block';
+            document.getElementById("CouplesYoga").style.display = 'block';
+            document.getElementById("BeautySalon").style.display = 'block';
+            document.getElementById("DrCare").style.display = 'block';
+            document.getElementById("IceSlide").style.display = 'block';
+            document.getElementById("Ipear").style.display = 'block';
+            document.getElementById("PowerWasher").style.display = 'block';
+            document.getElementById("Pottery").style.display = 'block';
+            document.getElementById("Jewelry").style.display = 'block';
+            document.getElementById("RPSRun").style.display = 'block';
+            RemoveLoadMoreButton();
+        }
+        function ShowShaders() {
+            hideAllPortfolioItems(); // hide
+            document.getElementById("Aurora1").style.display = 'block';
+            document.getElementById("Aurora2").style.display = 'block';
+            document.getElementById("Shader01").style.display = 'block';
+            document.getElementById("Shader02").style.display = 'block';
+            RemoveLoadMoreButton();
+
+        }
+        function ShowFavorite(){
+            hideAllPortfolioItems(); // hide
+            document.getElementById("Shader01").style.display = 'block';
+            document.getElementById("Machinarium").style.display = 'block';
+            document.getElementById("Shader02").style.display = 'block';
+            document.getElementById("EnvArt").style.display = 'block';
+            document.getElementById("Aurora1").style.display = 'block';
+            document.getElementById("Aurora2").style.display = 'block';
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
