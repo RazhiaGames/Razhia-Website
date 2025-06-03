@@ -12963,12 +12963,20 @@ footer.footer .social-link:hover {
   color: #1D809F;
   height: 7rem;
   width: 7rem;
+  overflow: hidden; /* Clips the image to the circular shape */
   display: block;
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
+/* .service-icon {
+    display: inline-block; /* Ensures the span behaves like a block for sizing */
+    width: 100px; /* Set a fixed width for the circle */
+    height: 100px; /* Set a fixed height for the circle */
+    overflow: hidden; /* Clips the image to the circular shape */
+    border-radius: 50%; /* Ensures the span is circular (likely already in rounded-circle) */
+} */
 
 #project-filters {
   margin-bottom: 20px;
